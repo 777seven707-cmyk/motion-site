@@ -1,0 +1,8 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "777seven707-cmyk" },
+  "plugins": [
+    { "name": "limit-bar", "source": "./limit-bar", "description": "Orange progress bars for the 5-hour and weekly usage limits above the prompt" },
+    { "name": "phone-pings", "source": "./phone-pings", "description": "Push notifications when Claude asks a question, needs approval, or finishes" }
+  ]
+}
