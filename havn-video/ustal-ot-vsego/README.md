@@ -6,6 +6,8 @@ TikTok-рубрика для слота «среда 21.10, 22:00» (ролик 
 
 - `release/havn_ustal_ot_vsego.mp4` — готовое видео: 1080×1920, 60 fps,
   25,5 с, H.264 + AAC, музыка и SFX без голоса
+- `release/havn_ustal_ot_vsego_s_golosom.mp4` — **финал для публикации**: с голосом
+  (ElevenLabs, Tatyana Voloshina), 25 с, −14 LUFS
 - `release/cover.png` — кадр для обложки
 - `VOICEOVER.md` — текст для ElevenLabs с таймкодами, настройки голоса,
   описание к публикации
@@ -21,6 +23,8 @@ TikTok-рубрика для слота «среда 21.10, 22:00» (ролик 
   (`node tools/render.mjs video 4`; `stills 1.5 7.6` — отдельные кадры).
 - `tools/audio.py` — музыка и SFX синтезируются в numpy по списку событий,
   который экспортирует сцена (`out/sfx.json`).
+- `tools/mix_voice.py` — режет один дубль ElevenLabs на фразы и ставит каждую
+  под её слово на экране (`python3 tools/mix_voice.py voice.mp3 video.mp4 out.mp4`).
 - `tools/mix_vo.sh` — подкладывает реплики ElevenLabs на таймкоды,
   приглушает под ними музыку и нормализует громкость.
 
