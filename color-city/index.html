@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Город красок</title>
+<style>
+  html,body{margin:0;height:100%;background:#111}
+  body{display:flex;align-items:center;justify-content:center}
+  #out{width:100vw;max-height:100vh;aspect-ratio:16/9;height:auto;display:block}
+  #gl{display:none}
+</style>
+<script type="importmap">
+{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}
+</script>
+</head>
+<body>
+<canvas id="out" width="1920" height="1080"></canvas>
+<script type="module" src="city.js"></script>
+</body>
+</html>
